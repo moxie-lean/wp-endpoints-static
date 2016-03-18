@@ -39,6 +39,8 @@ class StaticApi
 
 		return [
 			'site_name' => get_bloginfo( 'name' ),
+			'site_description' => get_bloginfo( 'description' ),
+			'site_icon' => get_site_icon_url(),
 		];
 	}
 }
