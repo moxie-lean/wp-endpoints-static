@@ -7,6 +7,8 @@ The endpoint takes a no parameters and returns the following data:
 - Site name
 - Site tagline
 - Menus
+   - Menu location
+      - Menu items
 - Widgets
 
 

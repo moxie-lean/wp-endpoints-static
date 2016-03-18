@@ -26,7 +26,7 @@ class Menus
 				if ( ! $menu_item->menu_item_parent ) {
 					$menus[ $location ][] = [
 						'title' => $menu_item->title,
-						'link' => $menu_item->url,
+						'link' => str_replace( site_url(), '', $menu_item->url ),
 						'items' => self::get_sub_menu_items( $menu_items, $menu_item->ID ),
 					];
 				}
@@ -50,7 +50,7 @@ class Menus
 			if ( $parent_id == $menu_item->menu_item_parent ) {
 				$items[] = [
 					'title' => $menu_item->title,
-					'link' => $menu_item->url,
+					'link' => str_replace( site_url(), '', $menu_item->url ),
 					'items' => self::get_sub_menu_items( $menu_items, $menu_item->ID ),
 				];
 			}
