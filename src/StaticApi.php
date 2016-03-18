@@ -26,8 +26,6 @@ class StaticApi
 				]
 			);
 		} );
-
-		Inc\Content::acf_customize();
 	}
 
 	/**
