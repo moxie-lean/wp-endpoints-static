@@ -1,4 +1,4 @@
-# WP Endpoints: View
+# WP Endpoints: Static
 
 > Generic but customisable endpoint to expose our static data via WP-API. This extension will create an endpoint (at ```/wp-json/leean/v1/static``` by default).
 
