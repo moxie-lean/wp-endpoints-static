@@ -1,9 +1,9 @@
-<?php namespace Leean\Endpoints\Inc;
+<?php namespace Leean\Endpoints\StaticApi;
 
 /**
  * Class Widgets
  *
- * @package Leean\Endpoints\Inc
+ * @package Leean\Endpoints\StaticApi
  */
 class Widgets
 {

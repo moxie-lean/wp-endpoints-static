@@ -1,7 +1,7 @@
 <?php namespace Leean\Endpoints;
 
-use Leean\Endpoints\Inc\Menus;
-use Leean\Endpoints\Inc\Widgets;
+use Leean\Endpoints\StaticApi\Menus;
+use Leean\Endpoints\StaticApi\Widgets;
 
 /**
  * Class to provide activation point for our endpoints.

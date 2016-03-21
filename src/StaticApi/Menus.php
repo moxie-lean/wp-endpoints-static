@@ -1,15 +1,15 @@
-<?php namespace Leean\Endpoints\Inc;
+<?php namespace Leean\Endpoints\StaticApi;
 
 /**
  * Class Menus
  *
- * @package Leean\Endpoints\Inc
+ * @package Leean\Endpoints\StaticApi
  */
 class Menus
 {
 	/**
 	 * Returns an array of menu locations, with the assigned menu in each.
-
+	 *
 	 * @return array
 	 */
 	public static function get() {
