@@ -28,7 +28,10 @@ class Widgets
 				$model = $wp_registered_widgets[ $widget ]['callback'][0];
 
 				if ( is_a( $model, 'Leean\Widgets\Models\AbstractWidget' ) ) {
-					$widget_areas[ $widget_area ][ $widget ] = $model->get_data();
+					$widget_areas[ $widget_area ][] = [
+						'type' => $model->get_slug(),
+						'content' => $model->get_data(),
+					];
 				}
 			}
 		}
