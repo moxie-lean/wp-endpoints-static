@@ -1,5 +1,8 @@
 <?php namespace Leean\Endpoints;
 
+use Leean\Endpoints\StaticApi\Menus;
+use Leean\Endpoints\StaticApi\Widgets;
+
 /**
  * Class to provide activation point for our endpoints.
  */
@@ -24,8 +27,6 @@ class StaticApi
 				]
 			);
 		} );
-
-		Inc\Content::acf_customize();
 	}
 
 	/**
@@ -39,6 +40,10 @@ class StaticApi
 
 		return [
 			'site_name' => get_bloginfo( 'name' ),
+			'site_description' => get_bloginfo( 'description' ),
+			'site_icon' => get_site_icon_url(),
+			'menus' => Menus::get_all_locations(),
+			'widgets' => Widgets::get_all_areas(),
 		];
 	}
 }
