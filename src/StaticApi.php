@@ -1,6 +1,7 @@
 <?php namespace Leean\Endpoints;
 
 use Leean\Endpoints\Inc\Menus;
+use Leean\Endpoints\Inc\Widgets;
 
 /**
  * Class to provide activation point for our endpoints.
@@ -42,6 +43,7 @@ class StaticApi
 			'site_description' => get_bloginfo( 'description' ),
 			'site_icon' => get_site_icon_url(),
 			'menus' => Menus::get(),
+			'widgets' => Widgets::get(),
 		];
 	}
 }
