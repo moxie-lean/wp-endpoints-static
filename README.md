@@ -17,7 +17,7 @@ The endpoint takes a no parameters and returns the following data:
 The easiest way to install this package is by using composer from your terminal:
 
 ```bash
-composer require moxie-leean/wp-endpoints-static --save
+composer require moxie-leean/wp-endpoints-static
 ```
 
 Or by adding the following lines on your `composer.json` file
