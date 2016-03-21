@@ -42,8 +42,8 @@ class StaticApi
 			'site_name' => get_bloginfo( 'name' ),
 			'site_description' => get_bloginfo( 'description' ),
 			'site_icon' => get_site_icon_url(),
-			'menus' => Menus::get(),
-			'widgets' => Widgets::get(),
+			'menus' => Menus::get_all_locations(),
+			'widgets' => Widgets::get_all_areas(),
 		];
 	}
 }

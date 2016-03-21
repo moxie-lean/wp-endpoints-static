@@ -12,7 +12,7 @@ class Menus
 	 *
 	 * @return array
 	 */
-	public static function get() {
+	public static function get_all_locations() {
 		$menus = [];
 
 		$locations = get_nav_menu_locations();

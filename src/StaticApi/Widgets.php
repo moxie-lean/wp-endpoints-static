@@ -12,7 +12,7 @@ class Widgets
 
 	 * @return array
 	 */
-	public static function get() {
+	public static function get_all_areas() {
 		global $wp_registered_widgets, $sidebars_widgets;
 
 		$widget_areas = [];
