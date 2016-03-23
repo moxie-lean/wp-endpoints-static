@@ -9,12 +9,16 @@
     {
       "name": "Adam Fenton",
       "email": "devs@getmoxied.net"
+    },
+    {
+      "name": "Crisoforo Gaspar Hernandez",
+      "email": "chernandez@getmoxied.net"
     }
   ],
   "require": {
     "php": ">=5.4",
-    "moxie-leean/wp-widgets": "dev-master",
-    "moxie-leean/wp-endpoint": "^0.1.0"
+    "moxie-leean/wp-endpoint": "^0.1.0",
+    "moxie-leean/wp-widgets": "^0.1.2"
   },
   "autoload": {
     "psr-4": {

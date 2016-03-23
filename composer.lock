@@ -4,9 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab385c6d2d7b9fdd55b1b668f5e9cea3",
-    "content-hash": "dde9a2304a9b1e518661b534d14a9908",
+    "hash": "3c92557c4b24f3e926f286138c76e023",
+    "content-hash": "bbb8404f4e0cc52069d0d37bd1b11c18",
     "packages": [
+        {
+            "name": "moxie-leean/wp-acf",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-acf.git",
+                "reference": "8154392b82e4db60e90d52c7bbfed8cfcb21e3b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/8154392b82e4db60e90d52c7bbfed8cfcb21e3b0",
+                "reference": "8154392b82e4db60e90d52c7bbfed8cfcb21e3b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Helper functions for working with Advanced Custom Fields",
+            "homepage": "https://github.com/moxie-leean/wp-acf",
+            "keywords": [
+                "acf",
+                "wordpress"
+            ],
+            "time": "2016-03-21 22:36:42"
+        },
         {
             "name": "moxie-leean/wp-endpoint",
             "version": "0.1.0",
@@ -50,29 +95,30 @@
         },
         {
             "name": "moxie-leean/wp-widgets",
-            "version": "dev-master",
+            "version": "0.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-widgets.git",
-                "reference": "d1abdbd0e96106fb799fc65abbca37509c28192e"
+                "reference": "14807ec2b1b13aebaf4af34af2b86505d1e8979b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/d1abdbd0e96106fb799fc65abbca37509c28192e",
-                "reference": "d1abdbd0e96106fb799fc65abbca37509c28192e",
+                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/14807ec2b1b13aebaf4af34af2b86505d1e8979b",
+                "reference": "14807ec2b1b13aebaf4af34af2b86505d1e8979b",
                 "shasum": ""
             },
             "require": {
+                "moxie-leean/wp-acf": "^0.3.0",
                 "php": ">=5.4"
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "dev-master"
+                "wp-coding-standards/wpcs": "0.9.0"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Leean\\": "src/"
+                    "Leean\\Widgets\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -90,7 +136,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-03-18 22:36:54"
+            "time": "2016-03-23 17:00:13"
         }
     ],
     "packages-dev": [
@@ -210,9 +256,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "moxie-leean/wp-widgets": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
