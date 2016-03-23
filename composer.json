@@ -9,10 +9,16 @@
     {
       "name": "Adam Fenton",
       "email": "devs@getmoxied.net"
+    },
+    {
+      "name": "Crisoforo Gaspar Hernandez",
+      "email": "chernandez@getmoxied.net"
     }
   ],
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.4",
+    "moxie-leean/wp-endpoint": "^0.1.0",
+    "moxie-leean/wp-widgets": "^0.1.2"
   },
   "autoload": {
     "psr-4": {
@@ -21,7 +27,7 @@
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "2.*",
-    "wp-coding-standards/wpcs": "dev-master"
+    "wp-coding-standards/wpcs": "0.9.0"
   },
   "scripts": {
     "installSniffer": [
@@ -30,11 +36,10 @@
       "./vendor/bin/phpcs --config-set show_progress 0",
       "./vendor/bin/phpcs --config-set colors 1"
     ],
-    "post-install-cmd": [ "@installSnifferj" ],
+    "post-install-cmd": [ "@installSniffer" ],
     "post-update-cmd": [ "@installSniffer" ],
     "ci": [
       "phpcs src/*.php src/**/*.php"
     ]
   }
 }
-

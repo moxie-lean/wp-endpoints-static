@@ -2,48 +2,37 @@
 
 use Leean\Endpoints\StaticApi\Menus;
 use Leean\Endpoints\StaticApi\Widgets;
+use Leean\AbstractEndpoint;
 
 /**
  * Class to provide activation point for our endpoints.
  */
-class StaticApi
-{
-	const ENDPOINT = '/static';
+class StaticApi extends AbstractEndpoint {
 
 	/**
-	 * Init.
+	 * Endpoint path
+	 *
+	 * @Override
+	 * @var String
 	 */
-	public static function init() {
-		add_action( 'rest_api_init', function () {
-			$namespace = apply_filters( 'ln_endpoints_api_namespace', 'leean', self::ENDPOINT );
-			$version = apply_filters( 'ln_endpoints_api_version', 'v1', self::ENDPOINT );
-
-			register_rest_route(
-				$namespace . '/' . $version,
-				self::ENDPOINT,
-				[
-					'methods' => 'GET',
-					'callback' => [ __CLASS__, 'get_data' ],
-				]
-			);
-		} );
-	}
+	protected $endpoint = '/static';
 
 	/**
 	 * Get the data.
 	 *
+	 * @Override
 	 * @param \WP_REST_Request $request The request.
 	 *
 	 * @return array|\WP_Error
 	 */
-	public static function get_data( \WP_REST_Request $request ) {
-
-		return [
+	public function endpoint_callback( \WP_REST_Request $request ) {
+		$data = [
 			'site_name' => get_bloginfo( 'name' ),
 			'site_description' => get_bloginfo( 'description' ),
 			'site_icon' => get_site_icon_url(),
 			'menus' => Menus::get_all_locations(),
 			'widgets' => Widgets::get_all_areas(),
 		];
+		return $this->filter_data( $data );
 	}
 }

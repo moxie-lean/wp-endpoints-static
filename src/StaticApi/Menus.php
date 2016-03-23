@@ -47,7 +47,7 @@ class Menus
 		$items = [];
 
 		foreach ( $menu_items as $menu_item ) {
-			if ( $parent_id == $menu_item->menu_item_parent ) {
+			if ( intval( $parent_id ) === intval( $menu_item->menu_item_parent ) ) {
 				$items[] = [
 					'title' => $menu_item->title,
 					'link' => str_replace( site_url(), '', $menu_item->url ),
