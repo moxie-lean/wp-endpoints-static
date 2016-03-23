@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "10b2d7290e0803e4493dc5f7392210a9",
-    "content-hash": "01288ac7107f62bec362132434f59774",
+    "hash": "ab385c6d2d7b9fdd55b1b668f5e9cea3",
+    "content-hash": "dde9a2304a9b1e518661b534d14a9908",
     "packages": [
         {
             "name": "moxie-leean/wp-endpoint",
@@ -173,7 +173,7 @@
         },
         {
             "name": "wp-coding-standards/wpcs",
-            "version": "dev-master",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
@@ -211,8 +211,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "moxie-leean/wp-widgets": 20,
-        "wp-coding-standards/wpcs": 20
+        "moxie-leean/wp-widgets": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
