@@ -4,9 +4,95 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "15342c9ef6205eda3fdd74c325b21be0",
-    "content-hash": "5246f9af976b763d9c3c68de6cc50835",
-    "packages": [],
+    "hash": "10b2d7290e0803e4493dc5f7392210a9",
+    "content-hash": "01288ac7107f62bec362132434f59774",
+    "packages": [
+        {
+            "name": "moxie-leean/wp-endpoint",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-endpoint.git",
+                "reference": "330400607ba718eb6b6e17d3e9e51b91bdad44b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/330400607ba718eb6b6e17d3e9e51b91bdad44b0",
+                "reference": "330400607ba718eb6b6e17d3e9e51b91bdad44b0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Moxie Developers",
+                    "email": "developer@getmoxied.net"
+                }
+            ],
+            "description": "wp-endpoint",
+            "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
+            "time": "2016-03-22 23:49:25"
+        },
+        {
+            "name": "moxie-leean/wp-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/moxie-leean/wp-widgets.git",
+                "reference": "d1abdbd0e96106fb799fc65abbca37509c28192e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/d1abdbd0e96106fb799fc65abbca37509c28192e",
+                "reference": "d1abdbd0e96106fb799fc65abbca37509c28192e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Leean\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Fenton",
+                    "email": "devs@getmoxied.net"
+                }
+            ],
+            "description": "Control the WP widgets whilst using WP in as a headless CMS.",
+            "homepage": "https://github.com/moxie-leean/wp-widgets",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2016-03-18 22:36:54"
+        }
+    ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
@@ -125,6 +211,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "moxie-leean/wp-widgets": 20,
         "wp-coding-standards/wpcs": 20
     },
     "prefer-stable": false,
