@@ -25,6 +25,9 @@ class Widgets
 			$widget_areas[ $widget_area ] = [];
 
 			foreach ( $widgets as $widget ) {
+				if ( ! isset( $wp_registered_widgets[ $widget ] ) ) {
+					continue;
+				}
 				$model = $wp_registered_widgets[ $widget ]['callback'][0];
 
 				if ( is_a( $model, 'Leean\Widgets\Models\AbstractWidget' ) ) {
