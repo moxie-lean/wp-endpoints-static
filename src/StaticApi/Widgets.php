@@ -1,5 +1,7 @@
 <?php namespace Leean\Endpoints\StaticApi;
 
+use Leean\Widgets\Register;
+
 /**
  * Class Widgets
  *
@@ -13,7 +15,7 @@ class Widgets
 	 * @return array
 	 */
 	public static function get_all_areas() {
-		global $wp_registered_widgets, $sidebars_widgets;
+		global $sidebars_widgets;
 
 		$widget_areas = [];
 
@@ -25,17 +27,16 @@ class Widgets
 			$widget_areas[ $widget_area ] = [];
 
 			foreach ( $widgets as $widget ) {
-				if ( ! isset( $wp_registered_widgets[ $widget ] ) ) {
+				$model = Register::get_widget_instance( $widget );
+
+				if ( ! $model ) {
 					continue;
 				}
-				$model = $wp_registered_widgets[ $widget ]['callback'][0];
 
-				if ( is_a( $model, 'Leean\Widgets\Models\AbstractWidget' ) ) {
-					$widget_areas[ $widget_area ][] = [
-						'type' => $model->get_slug(),
-						'content' => $model->get_data(),
-					];
-				}
+				$widget_areas[ $widget_area ][] = [
+					'type' => $model->get_slug(),
+					'content' => $model->get_data(),
+				];
 			}
 		}
 
