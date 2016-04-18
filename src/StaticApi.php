@@ -5,6 +5,7 @@ use Leean\Endpoints\StaticApi\Menus;
 use Leean\Endpoints\StaticApi\Widgets;
 use Leean\Endpoints\StaticApi\Verification;
 use Leean\AbstractEndpoint;
+use Leean\Acf;
 
 /**
  * Class to provide activation point for our endpoints.
