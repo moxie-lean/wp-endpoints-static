@@ -28,7 +28,7 @@ class StaticApi extends AbstractEndpoint {
 	 * @return array|\WP_Error
 	 */
 	public function endpoint_callback( \WP_REST_Request $request ) {
-		$data = [
+		$data = array_merge( [
 			'site_name' => get_bloginfo( 'name' ),
 			'site_description' => get_bloginfo( 'description' ),
 			'site_icon' => get_site_icon_url(),
@@ -36,7 +36,8 @@ class StaticApi extends AbstractEndpoint {
 			'widgets' => Widgets::get_all_areas(),
 			'verification' => Verification::webmaster_tools(),
 			'gravity_forms' => GravityForms::get_settings(),
-		];
+		], Acf::get_option_field() );
+
 		return $this->filter_data( $data );
 	}
 }
