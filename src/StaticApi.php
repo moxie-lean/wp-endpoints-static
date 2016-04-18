@@ -1,5 +1,6 @@
 <?php namespace Leean\Endpoints;
 
+use Leean\Endpoints\StaticApi\GravityForms;
 use Leean\Endpoints\StaticApi\Menus;
 use Leean\Endpoints\StaticApi\Widgets;
 use Leean\Endpoints\StaticApi\Verification;
@@ -34,6 +35,7 @@ class StaticApi extends AbstractEndpoint {
 			'menus' => Menus::get_all_locations(),
 			'widgets' => Widgets::get_all_areas(),
 			'verification' => Verification::webmaster_tools(),
+			'gravity_forms' => GravityForms::get_settings(),
 		];
 		return $this->filter_data( $data );
 	}
