@@ -3,7 +3,6 @@
 use Leean\Endpoints\StaticApi\GravityForms;
 use Leean\Endpoints\StaticApi\Menus;
 use Leean\Endpoints\StaticApi\Widgets;
-use Leean\Endpoints\StaticApi\Verification;
 use Leean\AbstractEndpoint;
 use Leean\Acf;
 
@@ -35,7 +34,6 @@ class StaticApi extends AbstractEndpoint {
 			'site_icon' => get_site_icon_url(),
 			'menus' => Menus::get_all_locations(),
 			'widgets' => Widgets::get_all_areas(),
-			'verification' => Verification::webmaster_tools(),
 			'gravity_forms' => GravityForms::get_settings(),
 		], Acf::get_option_field() );
 
