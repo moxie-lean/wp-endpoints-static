@@ -26,19 +26,21 @@ class Widgets
 
 			$widget_areas[ $widget_area ] = [];
 
-			if ( ! empty( $widgets ) ) {
-				foreach ( $widgets as $widget ) {
-					$model = Register::get_widget_instance( $widget );
+			if ( empty( $widgets ) ) {
+				continue;
+			}
 
-					if ( ! $model ) {
-						continue;
-					}
+			foreach ( $widgets as $widget ) {
+				$model = Register::get_widget_instance( $widget );
 
-					$widget_areas[ $widget_area ][] = [
-						'type' => $model->get_slug(),
-						'content' => $model->get_data(),
-					];
+				if ( ! $model ) {
+					continue;
 				}
+
+				$widget_areas[ $widget_area ][] = [
+					'type' => $model->get_slug(),
+					'content' => $model->get_data(),
+				];
 			}
 		}
 
