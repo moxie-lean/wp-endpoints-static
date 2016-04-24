@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7fb5518ca692f2907b6c82c1975f0045",
-    "content-hash": "83761499f71b40742930df459542ce72",
+    "hash": "43a977272727855f2bfffde8c36bc993",
+    "content-hash": "df5c1556da16e970d6b57d8bdc2fee90",
     "packages": [
         {
-            "name": "moxie-leean/wp-acf",
-            "version": "0.4.1",
+            "name": "moxie-lean/wp-acf",
+            "version": "0.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-acf.git",
-                "reference": "983c1e3e738c41bb1e4aa0d500a27e68812ddb0c"
+                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/983c1e3e738c41bb1e4aa0d500a27e68812ddb0c",
-                "reference": "983c1e3e738c41bb1e4aa0d500a27e68812ddb0c",
+                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492",
+                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492",
                 "shasum": ""
             },
             "require": {
@@ -54,20 +54,20 @@
                 "acf",
                 "wordpress"
             ],
-            "time": "2016-03-29 17:07:41"
+            "time": "2016-04-05 00:51:32"
         },
         {
-            "name": "moxie-leean/wp-endpoint",
-            "version": "0.2.0",
+            "name": "moxie-lean/wp-endpoint",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-endpoint.git",
-                "reference": "f5c9ce42c156f05bac331cb23c85182da4bd2e16"
+                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/f5c9ce42c156f05bac331cb23c85182da4bd2e16",
-                "reference": "f5c9ce42c156f05bac331cb23c85182da4bd2e16",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/2c2bcf680f671022d24160c97bca8115d71b9951",
+                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "2.*",
-                "wp-coding-standards/wpcs": "dev-master"
+                "wp-coding-standards/wpcs": "0.9.0"
             },
             "type": "library",
             "autoload": {
@@ -95,24 +95,24 @@
             ],
             "description": "wp-endpoint",
             "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
-            "time": "2016-03-23 04:32:27"
+            "time": "2016-04-19 14:24:34"
         },
         {
-            "name": "moxie-leean/wp-widgets",
-            "version": "0.1.4",
+            "name": "moxie-lean/wp-widgets",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-widgets.git",
-                "reference": "7a015bc9d1535ca90041c424715600165e3aa2f5"
+                "reference": "cb0a7b10f34b0332b812f1a19ed466e79b1c7616"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/7a015bc9d1535ca90041c424715600165e3aa2f5",
-                "reference": "7a015bc9d1535ca90041c424715600165e3aa2f5",
+                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/cb0a7b10f34b0332b812f1a19ed466e79b1c7616",
+                "reference": "cb0a7b10f34b0332b812f1a19ed466e79b1c7616",
                 "shasum": ""
             },
             "require": {
-                "moxie-leean/wp-acf": "0.*.*",
+                "moxie-lean/wp-acf": "0.*.*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -122,7 +122,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Leean\\Widgets\\": "src/"
+                    "Lean\\Widgets\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -140,25 +140,26 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-03-30 18:00:46"
+            "time": "2016-04-24 23:09:38"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.5.1",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8"
+                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
-                "reference": "6731851d6aaf1d0d6c58feff1065227b7fda3ba8",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1bcdf03b068a530ac1962ce671dead356eeba43b",
+                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b",
                 "shasum": ""
             },
             "require": {
+                "ext-simplexml": "*",
                 "ext-tokenizer": "*",
                 "ext-xmlwriter": "*",
                 "php": ">=5.1.2"
@@ -219,7 +220,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-01-19 23:39:10"
+            "time": "2016-04-03 22:58:34"
         },
         {
             "name": "wp-coding-standards/wpcs",

@@ -1,12 +1,11 @@
-<?php namespace Leean\Endpoints\StaticApi;
+<?php namespace Lean\Endpoints\StaticApi;
 
 /**
  * Class Menus
  *
- * @package Leean\Endpoints\StaticApi
+ * @package Lean\Endpoints\StaticApi
  */
-class Menus
-{
+class Menus {
 	/**
 	 * Returns an array of menu locations, with the assigned menu in each.
 	 *

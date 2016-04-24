@@ -1,12 +1,11 @@
-<?php namespace Leean\Endpoints\StaticApi;
+<?php namespace Lean\Endpoints\StaticApi;
 
 /**
  * Class GravityForms.
  *
- * @package Leean\Endpoints\StaticApi
+ * @package Lean\Endpoints\StaticApi
  */
-class GravityForms
-{
+class GravityForms {
 	const SIGNATURE_EXPIRY = '+1 day';
 
 	/**

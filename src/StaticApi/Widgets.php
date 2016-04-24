@@ -1,14 +1,13 @@
-<?php namespace Leean\Endpoints\StaticApi;
+<?php namespace Lean\Endpoints\StaticApi;
 
-use Leean\Widgets\Register;
+use Lean\Widgets\Register;
 
 /**
  * Class Widgets
  *
- * @package Leean\Endpoints\StaticApi
+ * @package Lean\Endpoints\StaticApi
  */
-class Widgets
-{
+class Widgets {
 	/**
 	 * Returns an array of widget areas, with the assigned widgets in each.
 
