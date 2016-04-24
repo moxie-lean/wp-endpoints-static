@@ -17,18 +17,18 @@ The endpoint takes a no parameters and returns the following data:
 The easiest way to install this package is by using composer from your terminal:
 
 ```bash
-composer require moxie-leean/wp-endpoints-static
+composer require moxie-lean/wp-endpoints-static
 ```
 
 Or by adding the following lines on your `composer.json` file
 
 ```json
 "require": {
-  "moxie-leean/wp-endpoints-static": "dev-master"
+  "moxie-lean/wp-endpoints-static": "dev-master"
 }
 ```
 
-This will download the files from the [packagist site](https://packagist.org/packages/moxie-leean/wp-endpoints-static) 
+This will download the files from the [packagist site](https://packagist.org/packages/moxie-lean/wp-endpoints-static) 
 and set you up with the latest version located on master branch of the repository. 
 
 After that you can include the `autoload.php` file in order to
@@ -41,7 +41,7 @@ include '/vendor/autoload.php';
 Finally you need to initialise the endpoint by adding this to your code:
 
 ```php
-\Leean\Endpoints\StaticApi::init();
+\Lean\Endpoints\StaticApi::init();
 ```
 
 ## Usage

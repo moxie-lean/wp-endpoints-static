@@ -1,10 +1,10 @@
-<?php namespace Leean\Endpoints;
+<?php namespace Lean\Endpoints;
 
-use Leean\Endpoints\StaticApi\GravityForms;
-use Leean\Endpoints\StaticApi\Menus;
-use Leean\Endpoints\StaticApi\Widgets;
-use Leean\AbstractEndpoint;
-use Leean\Acf;
+use Lean\Endpoints\StaticApi\GravityForms;
+use Lean\Endpoints\StaticApi\Menus;
+use Lean\Endpoints\StaticApi\Widgets;
+use Lean\AbstractEndpoint;
+use Lean\Acf;
 
 /**
  * Class to provide activation point for our endpoints.
