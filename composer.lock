@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43a977272727855f2bfffde8c36bc993",
-    "content-hash": "df5c1556da16e970d6b57d8bdc2fee90",
+    "hash": "63b02af0370e7f4d730ce650b0f28bda",
+    "content-hash": "8ccd35d4ec4b7a128502754e01b65ebc",
     "packages": [
         {
             "name": "moxie-lean/wp-acf",
-            "version": "0.4.4",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-acf.git",
-                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492"
+                "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492",
-                "reference": "e3c98a72ebc20b84571625d5ed0ff9d5ea5f4492",
+                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
+                "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc",
                 "shasum": ""
             },
             "require": {
@@ -31,7 +31,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Leean\\": "src/"
+                    "Lean\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -54,20 +54,20 @@
                 "acf",
                 "wordpress"
             ],
-            "time": "2016-04-05 00:51:32"
+            "time": "2016-04-24 03:21:52"
         },
         {
             "name": "moxie-lean/wp-endpoint",
-            "version": "0.3.0",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-endpoint.git",
-                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951"
+                "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/2c2bcf680f671022d24160c97bca8115d71b9951",
-                "reference": "2c2bcf680f671022d24160c97bca8115d71b9951",
+                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
+                "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e",
                 "shasum": ""
             },
             "require": {
@@ -80,7 +80,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Leean\\": "src/"
+                    "Lean\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -95,24 +95,24 @@
             ],
             "description": "wp-endpoint",
             "homepage": "https://github.com/moxie-leean/wp-endpoints-post/",
-            "time": "2016-04-19 14:24:34"
+            "time": "2016-04-24 03:37:17"
         },
         {
             "name": "moxie-lean/wp-widgets",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moxie-leean/wp-widgets.git",
-                "reference": "cb0a7b10f34b0332b812f1a19ed466e79b1c7616"
+                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/cb0a7b10f34b0332b812f1a19ed466e79b1c7616",
-                "reference": "cb0a7b10f34b0332b812f1a19ed466e79b1c7616",
+                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
+                "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "shasum": ""
             },
             "require": {
-                "moxie-lean/wp-acf": "0.*.*",
+                "moxie-lean/wp-acf": "1.*.*",
                 "php": ">=5.4"
             },
             "require-dev": {
@@ -140,7 +140,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-04-24 23:09:38"
+            "time": "2016-04-25 01:43:06"
         }
     ],
     "packages-dev": [
