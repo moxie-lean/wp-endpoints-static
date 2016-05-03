@@ -20,6 +20,7 @@ class Menus {
 			$menus[ $location ] = [];
 
 			$menu_items = wp_get_nav_menu_items( $menu_id );
+			$menu_items = is_array( $menu_items ) ? $menu_items : [];
 
 			foreach ( $menu_items as $menu_item ) {
 				if ( ! $menu_item->menu_item_parent ) {
