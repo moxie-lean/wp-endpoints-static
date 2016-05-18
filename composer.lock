@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "63b02af0370e7f4d730ce650b0f28bda",
+    "hash": "cc2088d5e2db69886a2e1e40852f0eca",
     "content-hash": "8ccd35d4ec4b7a128502754e01b65ebc",
     "packages": [
         {
@@ -12,12 +12,12 @@
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-acf.git",
+                "url": "https://github.com/moxie-lean/wp-acf.git",
                 "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
+                "url": "https://api.github.com/repos/moxie-lean/wp-acf/zipball/15232b3814aa7be8cf01b1d217f75ded1670d7bc",
                 "reference": "15232b3814aa7be8cf01b1d217f75ded1670d7bc",
                 "shasum": ""
             },
@@ -61,12 +61,12 @@
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-endpoint.git",
+                "url": "https://github.com/moxie-lean/wp-endpoint.git",
                 "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
+                "url": "https://api.github.com/repos/moxie-lean/wp-endpoint/zipball/a0d57f6cd385a720c2c0d2658d46bb199c65295e",
                 "reference": "a0d57f6cd385a720c2c0d2658d46bb199c65295e",
                 "shasum": ""
             },
@@ -102,12 +102,12 @@
             "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moxie-leean/wp-widgets.git",
+                "url": "https://github.com/moxie-lean/wp-widgets.git",
                 "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moxie-leean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
+                "url": "https://api.github.com/repos/moxie-lean/wp-widgets/zipball/b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "reference": "b880753b0912d0729f12ad4afaa1ba9e37dc008d",
                 "shasum": ""
             },
