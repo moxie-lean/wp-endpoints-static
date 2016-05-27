@@ -2,7 +2,7 @@
   "name": "moxie-lean/wp-endpoints-static",
   "description": "Generic but customisable endpoint to expose our static data via WP-API.",
   "keywords": ["wordpress", "api"],
-  "homepage": "https://github.com/moxie-leean/wp-endpoints-static",
+  "homepage": "https://github.com/moxie-lean/wp-endpoints-static",
   "type": "library",
   "license": "MIT",
   "authors": [
