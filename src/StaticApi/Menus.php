@@ -24,11 +24,12 @@ class Menus {
 
 			foreach ( $menu_items as $menu_item ) {
 				if ( ! $menu_item->menu_item_parent ) {
-					$menus[ $location ][] = [
+					$items = [
 						'title' => $menu_item->title,
 						'link' => str_replace( site_url(), '', $menu_item->url ),
 						'items' => self::get_sub_menu_items( $menu_items, $menu_item->ID ),
 					];
+					$menus[ $location ][] = apply_filters( "menu_$location", $items );
 				}
 			}
 		}
